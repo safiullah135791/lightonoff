@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+.hero{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+nav .menu-img{
+    width: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px 30px;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: 2s;
+}
+nav button span{
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background: #999;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: 2s;
+}
+.lamp-container{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 100px;
+}
+.lamp{
+    width: 100%;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 45%;
+    transform: translate(-50%);
+    width: 390px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.text-container{
+    max-width: 600px;
+    margin-top: -5%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 30px;
+}
+.on{
+    opacity: 1;
+}
+.lampon{
+    opacity: 1;
+}
+@media (max-width:700px){
+
+.hero{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    }
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.lamp-container{
+    position: absolute;
+    top: 0;
+    left: 105px;
+    width: 100px;
+}
+
+.lamp{
+    width: 100%;
+    height: 250px;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 45%;
+    transform: translate(-50%);
+    width: 390px;
+    height: 230px;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: -9%;
+    margin-left: 50%;
+}
+
+.text-container h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 2px 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.active{
+    background: green;
+}
+}
